@@ -1,0 +1,31 @@
+Descripcion de los datos
+Considere la base de datos de un sistema de informacion de personal de una empresa, contenida en los
+archivos empleados.txt, trabaja en.txt y departamentos.txt. Esta base de datos contiene las siguientes
+relaciones (OJO: RELACIONES NO ES LO MISMO QUE SQL):
+
+• Empleados(id: INTEGER, nombre: STRING, edad: INTEGER, sueldo: FLOAT)
+• Trabaja en(id empleado: INTEGER, id dpto: INTEGER, porcentaje tiempo: INTEGER)
+• Departamentos(id: INTEGER, nombre: STRING, presupuesto: FLOAT, id jefe: INTEGER)
+
+Para cumplir las misiones de esta actividad, es su responsabilidad explorar inicialmente el contenido de los
+archivos y familiarizarse con el formato en que esta almacenada la informacion.
+
+Mision 1: Modelacion de entidades y carga de datos (2 ptos.)
+En base a la estructura de los datos almacenados en el archivo, debera utilizar conceptos de bases de
+datos relacionales para crear tablas que modelen las tres relaciones antes descritas, incluyendo las restric-
+ciones de integridad correspondientes. Una vez cumplido lo anterior, debera extraer los datos de los archivos
+y cargarlos en las tablas correspondientes.
+
+Mision 2: Consultas (4 ptos.)
+Para cada una de las siguientes preguntas sobre los datos, escriba una unica consulta en SQL que la
+responda.
+• Encuentre el nombre y la edad de cada empleado que trabaja en los departamentos de Software y
+Hardware.
+
+• Encuentre el nombre de los jefes que administran los departamentos con el presupuesto maximo.
+
+• Encuentre el nombre de los empleados cuyo sueldo excede el presupuesto de todos los departamentos
+en los que trabaja.
+
+• Para cada departamento con dedicacion del personal EQUIVALENTE a al menos 20 empleados a
+tiempo completo, encuentro el nombre del departamento y la cantidad de empleados.
